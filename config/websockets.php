@@ -59,7 +59,7 @@ return [
     /*
      * This path will be used to register the necessary routes for the package.
      */
-    'path' => 'laravel-websockets',
+    'path' => 'panelwebsockets',
 
     /*
      * Dashboard Routes Middleware
@@ -84,7 +84,7 @@ return [
         /*
          * Here you can specify the interval in seconds at which statistics should be logged.
          */
-        'interval_in_seconds' => 60,
+        'interval_in_seconds' => 10,
 
         /*
          * When the clean-command is executed, all recorded statistics older than
@@ -96,7 +96,7 @@ return [
          * Use an DNS resolver to make the requests to the statistics logger
          * default is to resolve everything to 127.0.0.1.
          */
-        'perform_dns_lookup' => false,
+        'perform_dns_lookup' => true,
     ],
 
     /*
